@@ -31,4 +31,12 @@
     <p>{{ cheese.creator.name }}</p>
 {% endif %}
 
+<p>
+    <a class="btn btn-primary" 
+    href="{% url 'cheeses:update' cheese.slug %}"
+    role="button">
+    Update
+    </a>
+</p>
+
 {% endblock content %}
