@@ -1,4 +1,6 @@
-# from ..models import Cheese
+import pytest
+
+from ..models import Cheese
 from .factories import CheeseFactory
 
 
