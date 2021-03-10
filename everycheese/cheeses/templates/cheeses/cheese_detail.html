@@ -31,6 +31,7 @@
     <p>{{ cheese.creator.name }}</p>
 {% endif %}
 
+{% if cheese.creator == request.user %}
 <p>
     <a class="btn btn-primary" 
     href="{% url 'cheeses:update' cheese.slug %}"
@@ -38,5 +39,5 @@
     Update
     </a>
 </p>
-
+{% endif %}
 {% endblock content %}
